@@ -257,18 +257,22 @@ Not found:
 
 ## 7. Postman Collection
 
-A Postman collection should be included in the repository under:
+A ready-to-import Postman collection is included in the repository at:
 
-- `postman/TaskFlow.postman_collection.json`
-
-Optional environment file:
-
-- `postman/TaskFlow.local.postman_environment.json`
+- `postman/taskflow-bacckend.postman_collection.json`
 
 Recommended Postman variables:
 
 - `baseUrl=http://localhost:8080`
 - `token=<jwt from login>`
+
+Suggested usage:
+
+1. Import `postman/taskflow-bacckend.postman_collection.json` into Postman
+2. Set `baseUrl` to `http://localhost:8080`
+3. Run the login request first
+4. Copy the returned JWT into the `token` variable
+5. Use the rest of the collection to test protected endpoints
 
 ## 8. Environment Variables
 
